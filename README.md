@@ -23,7 +23,7 @@ By joining this challenge, you're not just solving a math problem. You're helpin
 Your implementation must be capable of factoring any valid semiprime, not just a hardcoded example. No brute-force attacks. No classical-only factoring.
 
 ### Factor Large Semiprime Integers
-Work from a provided list of semiprime integers—starting from simple 8-bit values and scaling up to sizes never factored using quantum logic.
+Work from a [provided list of semiprime integers](./semiprimes.py)—starting from simple 8-bit values and scaling up to sizes never factored using quantum logic.
 
 ### Leverage the Quantum Rings Simulator
 Use any framework, but all circuits must run on the Quantum Rings Simulator.
@@ -32,7 +32,7 @@ Use any framework, but all circuits must run on the Quantum Rings Simulator.
 No classical shortcuts. Implement full quantum modular exponentiation, phase estimation, and QFT.
 
 ### Demonstrate Universality
-Show that your circuit works across multiple semiprimes of a given size.
+Show that your circuit works across multiple semiprimes of the [given list](./semiprimes.py).
 
 ### Document Your Approach
 Provide a clean explanation of your algorithm, approach, and insights.
@@ -72,7 +72,7 @@ See the [Challenge Guidelines](./challenge-guidelines.md) for detailed do’s an
 
 ## What you'll Win
 
-In addition to the pride of winning the MIT iQuHack, members of the winning team will receive:
+In addition to the pride of winning the challenge, members of the winning team will receive:
 
 🏆 **A copy of *Fundamentals of Quantum Computing: Theory and Practice*** by Quantum Rings' Co-founder and CTO, **Venkat Kasirajan**. (up to 5 team members)
 
