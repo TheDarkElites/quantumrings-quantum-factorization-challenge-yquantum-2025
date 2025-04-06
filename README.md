@@ -107,8 +107,9 @@ Submit the following:
 3. **Quantum Rings Email**: Include the email used to register at Quantum Rings-- this will be used to validate the circuit execution.
 4. **Documentation**: Explain your algorithm, scalability, and insights into any learnings or novelty in your approach.
 
-When you are ready to submit, you can submit your circuit using this [Google Form](https://forms.gle/GHXMXuHz7Fby96ky7)
+When you are ready to submit, you can submit your circuit using this [Google Form](https://forms.gle/NzCSnqppQNQCLRsX6)
 
+Note: In addition to submitting electronically, in-person teams will also be presenting in person.
 ---
 
 ## Resources
