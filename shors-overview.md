@@ -1,8 +1,8 @@
-# Shor's Factoring Challenge
+# Shor's Overview
 
-Your challenge is to factor the biggest semiprime number of the hackathon by developing your own Shor's factoring algorithm.
+Your [challenge](./README.md) is to factor the biggest semiprime number of the hackathon by developing your own Shor's factoring algorithm.
 
-Do not use brute force or classical methods like
+As a Reminder, we do not want to use brute force or classical methods like:
 * Pollard’s Rho
 * Pollard’s p-1
 * Quadratic Sieve
