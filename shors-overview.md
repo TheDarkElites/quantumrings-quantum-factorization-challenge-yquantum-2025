@@ -42,9 +42,9 @@ If you get a good value of **r** then check to see if you found an answer:
 
 ## Learning Example of Shor's
 
-Let's drill down with a specific example, factoring 15.  This is the smallest semiprime number that is interesting to factor.  A semiprime number is the product of two prime numbers.  You can find a list of semiprime numbers to use in this challenge **HERE**.
+Let's drill down with a specific example, factoring 15.  This is the smallest semiprime number that is interesting to factor.  A semiprime number is the product of two prime numbers.  You can find a list of semiprime numbers to use in this challenge [HERE](./semiprimes.py).
 
-This example is small enough that we can directly build and understand the circuit. **HERE**
+This example is small enough that we can directly build and understand the circuit. [HERE](shors.ipynb)
 The notebook describes the steps involved in the algorithm.  Take a look to understand how the pieces fit and what we're trying to do.
 
 This is not a complete universal example.  It is hard-coded to factor 15, but it shows how you get from theory to code.  The rest will be part of the hackathon challenge.
