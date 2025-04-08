@@ -34,11 +34,11 @@ No classical shortcuts. Implement full quantum modular exponentiation, phase est
 ### Demonstrate Universality
 Show that your circuit works across multiple semiprimes of the [given list](./semiprimes.py).
 
-### Document Your Approach
-Provide a clean explanation of your algorithm, approach, and insights.
-
 ### Working Source Code
-All source code must be provided via an open source GitHub repository.
+All source code must be provided via an open source [GitHub](https://github.com/home) repository.  If you don't already have an account, you can get one for free.
+
+### Document Your Approach
+Also in your GitHub repository, provide a clean explanation of your algorithm, approach, and insights.
 
 See the [Challenge Guidelines](./challenge-guidelines.md) for detailed do’s and don’ts.
 
@@ -102,7 +102,7 @@ If you need more capacity -- just ask!  We'll be happy to unlock even more qubit
 
 Submit the following:
 
-1. **Code**: Provide your quantum implementation using Quantum Rings'  simulator via GitHub. 
+1. **Code**: Provide your quantum implementation using Quantum Rings' simulator via GitHub. 
 2. **Results**: Include the integers factored, their prime factors, the number of qubits used, the number of gate operations, and the execution times.
 3. **Quantum Rings Email**: Include the email used to register at Quantum Rings-- this will be used to validate the circuit execution.
 4. **Documentation**: Explain your algorithm, scalability, and insights into any learnings or novelty in your approach.
