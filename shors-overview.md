@@ -12,7 +12,7 @@ As a Reminder, we do not want to use brute force or classical methods like:
 
 Shor's was among the first algorithms demonstrating the benefits of quantum computing.  Here's a video of Dr Shor himself giving a quick description of the algorithm: [Shor's Idea](https://youtu.be/hOlOY7NyMfs)  
 
-### 1) Pick **a** to Evaluate the Modular Exponentiation
+### 1) Pick **"a"** to Evaluate the Modular Exponentiation
 
 The first step is to create a list of numbers generated from a cyclic function, we want to find the **order** of **a**.   In practice, this means we are guessing values of **a** and trying them in our algorithm.  These guesses generate values of the period **r**.  A good value of **r** is even, so we can use it to look for a solution that *fits* the perodicity of the problem.  Our guess of **a** is between 1 and N, and it's always worth checking to see if the guess is actually a solution.
 
@@ -34,7 +34,7 @@ The next step is to build your circuit to exponentiate the function, generate th
 
 If you get a good value of **r** then check to see if you found an answer:
 
-    If r is **even**, compute:
+    If r is even, compute:
 
     gcd(a^(r/2) - 1, N) and gcd(a^(r/2) + 1, N).
 
@@ -44,7 +44,7 @@ If you get a good value of **r** then check to see if you found an answer:
 
 Let's drill down with a specific example, factoring 15.  This is the smallest semiprime number that is interesting to factor.  A semiprime number is the product of two prime numbers.  You can find a list of semiprime numbers to use in this challenge [HERE](./semiprimes.py).
 
-This example is small enough that we can directly build and understand the circuit. [HERE](shors.ipynb)
+This example is small enough that we can directly build and understand the circuit. [HERE](shor.ipynb)
 The notebook describes the steps involved in the algorithm.  Take a look to understand how the pieces fit and what we're trying to do.
 
 This is not a complete universal example.  It is hard-coded to factor 15, but it shows how you get from theory to code.  The rest will be part of the hackathon challenge.
@@ -55,9 +55,9 @@ To do a universal Shor's you need to
 
 * construct a controlled subscript, **j**, for the *counting register*:
 
-        > a^(2j) mod N
+        a^(2^j) mod N
 
-        *where j is the subscript for the counting register*.
+    *where j is the subscript for the counting register*.
 
 * Reuse a general pattern for modular multiplication.
 
@@ -65,7 +65,7 @@ After the QFT we measure to find the period.
 
 At the end of the notebooks you get a graph.  What is this?  Everything was going fine, now what did we just measure?  Were you expecting a solution?  These are **m** values that are the *phase* result of the QFT.  
 
-Convert the binary result to a number, like 0010 -> 2 or 0110 -> 4.  So from our graph we get the value of m split between 0, 2, 4, 6.  A ‘real’ or ‘universal’ Shor’s circuit would have more gates, multiple controlled exponent operations, and a classical fraction step to interpret the outcome.  All of that would give us a strong single peak for **m**.
+Convert the binary result to a number, like 0010 -> 2 or 0110 -> 6.  So from our graph we get the value of m split between 0, 2, 4, 6.  A ‘real’ or ‘universal’ Shor’s circuit would have more gates, multiple controlled exponent operations, and a classical fraction step to interpret the outcome.  All of that would give us a strong single peak for **m**.
 
 In our toy example we can **check each value of m** (excluding 0).
 
@@ -100,7 +100,7 @@ What next?
 
 Goal: Implement a universal Shor’s algorithm that can factor some large semiprime from the hackathon’s list. You get 200 qubits, so push it as far as you can without overshooting the time limit!
 
-Most quantum circuit simulators are unable to use provide more than 30 or so qubits to use in your algorithm.  
+Most quantum circuit simulators provide about 30 or so qubits to use in your algorithm.  
 * Quantum Rings will provide you **64 qubits** for free!  
 * If you are a student, you get **128 qubits**.  
 * But wait, there's more... 
