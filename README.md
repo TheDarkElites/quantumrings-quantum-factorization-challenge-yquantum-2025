@@ -13,3 +13,6 @@ and are ineffective in identifying the period (r), and the circuit itself is ove
   A surprisingly large amount about quantum computing, quantum circuits, and how far we can go without sleep.
 ## What's next for Large number factorization through Quantum Rings
   A very long nap.
+
+## Usage
+All files except for ```shors_algorithm_qiskit.ipynb``` belong to the quantumrings yquantum repo. Our implementation is located within ```shors_algorithm_qiskit.ipynb```.
